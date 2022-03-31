@@ -1,0 +1,25 @@
+{
+  "name": "the_blog",
+  "version": "1.0.0",
+  "description": "Simple blog written using JS and HTML",
+  "main": "index.js",
+  "scripts": {
+    "watch": "browser-sync start --server --files \"css/*.css\" \"*.html\" \"js/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Piotr-Grzybowski/the_blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Piotr-Grzybowski/the_blog/issues"
+  },
+  "homepage": "https://github.com/Piotr-Grzybowski/the_blog#readme",
+  "devDependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "browser-sync": "^2.27.9"
+  }
+}
