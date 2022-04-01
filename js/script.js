@@ -12,7 +12,9 @@ const select = {
   likesCount: ".likes-count",
   likesCounterButtons: ".like",
   importButton: ".import-articles-btn",
-  articlesCount: ".articles-count"
+  articlesCount: ".articles-count",
+  input: ".input",
+  textarea: ".textarea",
 };
 
 function initNewArticles() {
@@ -30,6 +32,7 @@ function createArticle(title, body) {
   articles.insertAdjacentHTML("beforeend", html);
   if (document.querySelector(`article[data-id="${givenId}"]`)) notifySuccess();
   else notifyError();
+  cleanFormInputs();
 
   initNewArticles();
 }
@@ -54,13 +57,13 @@ function showLikesCounts() {
 
   for (let likeCounter of likeCounters) {
     likeCounter.innerHTML =
-      likeCounter.parentElement.getAttribute("likes-count");
+      likeCounter.parentElement.parentElement.getAttribute("likes-count");
   }
 }
 
 function changeLikesCount(event) {
   const currentElement = event.target;
-  const parentElement = event.target.parentNode;
+  const parentElement = event.target.parentNode.parentNode;
   const likesCountNode = document.querySelector(
     `article[data-id="${parentElement.getAttribute("data-id")}"]`
   );
@@ -72,6 +75,14 @@ function changeLikesCount(event) {
     likesCountNode.setAttribute("likes-count", parseInt(likesCountValue) - 10);
   }
   showLikesCounts();
+}
+
+function cleanFormInputs() {
+  const input = document.querySelector(select.input);
+  const textarea = document.querySelector(select.textarea);
+
+  input.value = "";
+  textarea.value = "";
 }
 
 function importArticles() {

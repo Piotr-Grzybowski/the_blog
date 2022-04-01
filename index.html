@@ -16,57 +16,86 @@
   </head>
 
   <body>
-    <div class="blog">
-      <div class="container">
-        <h1 class="logo">Simple blogging platform</h1>
-        <main class="wrapper">
-          <div id="notification-area"></div>
-          <section class="posts">
-            <div class=""><button class="import-articles-btn">Load articles</button>
-              <p class="articles-count"></p>
-            </div>
-            <article class="post active" data-id="1" likes-count="0"">
-              <h3 class="post-title">efficitur erat interdum</h3>
-              <button class="delete-article">delete post</button>
-              <div class="post-content">
-                <p>
-                  Duis non dolor efficitur erat interdum fringilla a lobortis
-                  dolor. Aenean in massa viverra, pretium augue et, imperdiet
-                  diam. Proin varius vitae lectus ut suscipit. Etiam metus
-                  lacus, molestie at ante eget, gravida tristique metus. Morbi
-                  finibus elit mi, ut aliquam libero tempor eu.
-                </p>
-              </div>
-              <span class="remove like">-</span><span class="likes-count"></span><span class="add like">+</span>
-              <hr>
-            </article>
-            <article class="post active" data-id="19" likes-count="0"">
-              <h3 class="post-title">ut aliquam libero tempor</h3>
-              <button class="delete-article">delete post</button>
-              <div class="remove-article"></div>
-              <div class="post-content">
-                <p>
-                  Duis non dolor efficitur erat interdum fringilla a lobortis
-                  dolor. Aenean in massa viverra, pretium augue et, imperdiet
-                  diam. Proin varius vitae lectus ut suscipit. Etiam metus
-                  lacus, molestie at ante eget, gravida tristique metus. Morbi
-                  finibus elit mi, ut aliquam libero tempor eu.
-                </p>
-              </div>
-              <span class="remove like">-</span><span class="likes-count"></span><span class="add like">+</span>
-              <hr>
-            </article>
-          </section>
-          <aside class="create-form">
-            <form class="create-form">
-              <input type="text" placeholder="Article Title">
-              <textarea name="" placeholder="Write about something"></textarea>
-              <button type="submit">Create</button>
-            </form>
-          </aside>
-        </main>
-      </div>
-    </div>
+    <header>
+      <h1>Simple blog</h1>
+    </header>
+    <main>
+      <aside class="create-form-area">
+        Create new post
+        <form class="create-form">
+          <input class="input" type="text" placeholder="Article Title" />
+          <textarea
+            class="textarea"
+            placeholder="Write about something"
+          ></textarea>
+          <button type="submit">Create</button>
+        </form>
+      </aside>
+      <section class="posts">
+        <div id="notification-area"></div>
+        <div class="import-articles-btn">Import More Posts</div>
+        <span
+          >Number of articles on the blog is <span class="articles-count"></span
+        ></span>
+        <article class="post" data-id="1" likes-count="0">
+          <div class="post-content">
+            <h2 class="post-title">Article title Here</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              accumsan eleifend sapien vitae cursus. Aliquam laoreet purus ut
+              pellentesque auctor. Curabitur consequat mauris sed leo
+              condimentum finibus. Pellentesque iaculis turpis pellentesque
+              risus semper posuere. Pellentesque sit amet pulvinar dolor. Donec
+              ornare ac magna ac euismod.
+            </p>
+          </div>
+          <div class="delete-article">Remove X</div>
+          <div class="likes-area">
+            <span class="remove like">-</span><span class="likes-count"></span
+            ><span class="add like">+</span>
+          </div>
+        </article>
+        <article class="post" data-id="1" likes-count="0">
+          <div class="post-content">
+            <h2 class="post-title">Article title Here</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              accumsan eleifend sapien vitae cursus. Aliquam laoreet purus ut
+              pellentesque auctor. Curabitur consequat mauris sed leo
+              condimentum finibus. Pellentesque iaculis turpis pellentesque
+              risus semper posuere. Pellentesque sit amet pulvinar dolor. Donec
+              ornare ac magna ac euismod.
+            </p>
+          </div>
+          <div class="delete-article">Remove X</div>
+          <div class="likes-area">
+            <span class="remove like">-</span><span class="likes-count"></span
+            ><span class="add like">+</span>
+          </div>
+        </article>
+        <article class="post" data-id="1" likes-count="0">
+          <div class="post-content">
+            <h2 class="post-title">Article title Here</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              accumsan eleifend sapien vitae cursus. Aliquam laoreet purus ut
+              pellentesque auctor. Curabitur consequat mauris sed leo
+              condimentum finibus. Pellentesque iaculis turpis pellentesque
+              risus semper posuere. Pellentesque sit amet pulvinar dolor. Donec
+              ornare ac magna ac euismod.
+            </p>
+          </div>
+          <div class="delete-article">Remove X</div>
+          <div class="likes-area">
+            <span class="remove like">-</span><span class="likes-count"></span
+            ><span class="add like">+</span>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div>Some footer</div>
+    </footer>
     <script type="module" src="./js/script.js"></script>
   </body>
 </html>
