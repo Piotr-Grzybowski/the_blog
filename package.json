@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/Piotr-Grzybowski/the_blog#readme",
   "devDependencies": {
-    "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.27.9"
   }
 }

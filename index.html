@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
 
-</body>
+    <!--for scaling across various devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--set the color for the URL bar on Chrome on Android phones/tablets-->
+    <meta name="theme-color" content="#000000" />
+
+    <title>Blogging is my life</title>
+
+    <!--stylesheet-->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="blog">
+      <div class="container">
+        <h1 class="logo">Simple blogging platform</h1>
+        <main class="wrapper">
+          <div id="notification-area"></div>
+          <section class="posts">
+            <div class=""><button class="import-articles-btn">Load articles</button>
+              <p class="articles-count"></p>
+            </div>
+            <article class="post active" data-id="1" likes-count="0"">
+              <h3 class="post-title">efficitur erat interdum</h3>
+              <button class="delete-article">delete post</button>
+              <div class="post-content">
+                <p>
+                  Duis non dolor efficitur erat interdum fringilla a lobortis
+                  dolor. Aenean in massa viverra, pretium augue et, imperdiet
+                  diam. Proin varius vitae lectus ut suscipit. Etiam metus
+                  lacus, molestie at ante eget, gravida tristique metus. Morbi
+                  finibus elit mi, ut aliquam libero tempor eu.
+                </p>
+              </div>
+              <span class="remove like">-</span><span class="likes-count"></span><span class="add like">+</span>
+              <hr>
+            </article>
+            <article class="post active" data-id="19" likes-count="0"">
+              <h3 class="post-title">ut aliquam libero tempor</h3>
+              <button class="delete-article">delete post</button>
+              <div class="remove-article"></div>
+              <div class="post-content">
+                <p>
+                  Duis non dolor efficitur erat interdum fringilla a lobortis
+                  dolor. Aenean in massa viverra, pretium augue et, imperdiet
+                  diam. Proin varius vitae lectus ut suscipit. Etiam metus
+                  lacus, molestie at ante eget, gravida tristique metus. Morbi
+                  finibus elit mi, ut aliquam libero tempor eu.
+                </p>
+              </div>
+              <span class="remove like">-</span><span class="likes-count"></span><span class="add like">+</span>
+              <hr>
+            </article>
+          </section>
+          <aside class="create-form">
+            <form class="create-form">
+              <input type="text" placeholder="Article Title">
+              <textarea name="" placeholder="Write about something"></textarea>
+              <button type="submit">Create</button>
+            </form>
+          </aside>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="./js/script.js"></script>
+  </body>
 </html>
