@@ -23,3 +23,7 @@ Artykuł powinien składać się z
     - Upewnij się, że pola `id` nie pokrywają się z istniejącymi już
 - Dodaj fukcjonalność usuwania postów
 - Wyświetl ilość postów
+
+# Jak wystartować apkę
+
+Aplikację można wystartować przy pomocy live server lub poprzez wykonanie w terminalu instrukcji `npm install` a następnie `npm run watch`
